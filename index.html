@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="劲乐团草根版">
+    <meta name="author" content="kurisu">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--引入jquery-->
+    <script  src="https://cdn.rawgit.com/shinnn/AudioContext-Polyfill/master/audiocontext-polyfill.js"></script><!--引入audiocontext-polyfill.js，处理简化音频接口-->
+    <link rel="stylesheet" href="css/sG.css">
+    <script src="js/sG.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="header">
+        <h1 class="brand">草根劲乐团<span class="small">®</span></h1>
+    </div>
+    <div class="wrap-in">
+
+    </div>
+    <div class="footer">
+        <div class="rw">
+
+            <div class="btn-box inline">
+                <div class="r-btn level level2 clickable" id="level2"></div>
+                <h3 class="label">难度1</h3>
+                <div class="level-led" id="level2-led"></div>
+            </div>
+            <div class="btn-box inline">
+                <div class="r-btn level level3 clickable" id="level3"></div>
+                <h3 class="label">难度2</h3>
+                <div class="level-led" id="level3-led"></div>
+            </div>
+            <div class="btn-box inline">
+                <div class="r-btn level level4 clickable" id="level4"></div>
+                <h3 class="label">难度3</h3>
+                <div class="level-led" id="level4-led"></div>
+            </div>
+            <div class="btn-box inline">
+                <div class="r-btn level level5 clickable" id="level5"></div>
+                <h3 class="label">难度4</h3>
+                <div class="level-led" id="level5-led"></div>
+            </div>
+            <div class="display inline">
+                <h1 class="count led-off">--</h1>
+                <h3 class="label">计数</h3>
+            </div>
+            <div class="btn-box inline">
+                <div class="round-btn full-red btn unclickable" id="start"></div>
+                <h3 class="label">开始</h3>
+            </div>
+            <div class="btn-box inline">
+                <div class="round-btn btn unclickable" id="mode"></div>
+                <h3 class="label">严格</h3>
+                <div class="led" id="mode-led"></div>
+            </div>
+        </div>
+        <div class="rw bot">
+            <h3 class="label inline">关</h3>
+            <div class="sw-slot inline">
+                <div class="switch" id="pwr-sw"></div>
+            </div>
+            <h3 class="label inline">开</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

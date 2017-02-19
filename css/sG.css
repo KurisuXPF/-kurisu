@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=VT323|Oswald');
+/* 基本清除，设置系列默认属性 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    /* 禁止鼠标选择 */
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* 对于未指定的浏览器 */
+    -o-user-select: none;
+    user-select: none;
+}
+html{
+    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/purty_wood.png');
+}
+.inline{
+    display: inline-block;
+}
+.push{
+    position  : relative;
+    width:200px;
+    height:200px;
+    border-radius:40%;
+    background-color : grey;
+    border: 12px solid #333;
+}
+.rw{
+    margin-bottom:-4px;
+}
+.wrap{
+    width: 840px;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    top:10vh;
+}
+.wrap-in{
+    width: 840px;
+    position: relative;
+    top: 12px;
+    box-shadow: 0px 0px 12px #f00;
+    padding: 4px;
+    background-color: #655E64;
+}
+.header{
+    background-color: #0d6095;
+    width: 480px;
+    margin: 0 auto auto auto;
+    box-shadow: 0px 2px 3px #F5DC20;
+}
+.footer{
+    width:620px;
+    height:120px;
+    margin: 20px auto auto auto;
+}
+.brand{
+    font-family:  cursive;
+    color: #EC640F;
+    font-size: 3.2em;
+    margin-top : 35px;
+}
+.brand .small{
+    font-size : 0.3em;
+    position : relative;
+    top : -20px;
+}
+.count{
+    font-family: 'VT323', monospace;
+    color : #DC0D29;
+    padding : 0px;
+    font-size : 2em;
+    width : 50px;
+    background-color: #32050C;
+    position:relative;
+    border : 4px solid #222;
+    border-radius : 10px;
+    margin:auto;
+}
+.round-btn{
+    width : 20px;
+    height : 20px;
+    position: relative;
+    background-color : yellow;
+    border-radius : 100%;
+    border : 4px solid #444;
+    box-shadow : 0px 2px 3px #222;
+    margin:auto;
+    top : -5px;
+}
+.round-btn:active{
+    box-shadow : 0 1px 1px #292929;
+    top : -4px;
+}
+.r-btn{
+    width : 20px;
+    height : 20px;
+    position: relative;
+    border-radius : 20%;
+    border : 2px solid #444;
+    box-shadow : 0px 2px 3px #222;
+    margin:auto;
+    top : -5px;
+}
+.r-btn:active{
+    box-shadow : 0 1px 1px #292929;
+    top : -4px;
+}
+.clickable{
+    pointer-events : auto;
+    cursor:pointer;
+}
+.unclickable{
+    pointer-events:none;
+}
+.led,.level-led{
+    width:6px;
+    height:6px;
+    background-color: #32050C;
+    border-radius : 100%;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin : auto;
+    border: 2px solid #222;
+    top: -18px;
+}
+.led-on,.level-led-on{
+    background-color:#DC0D29;
+}
+.led-off{
+    color:#430710;
+}
+.label{
+    color : #222;
+    font-family : 'Oswald',Arial,sans;
+    font-size:0.7em;
+    margin-top:5px;
+    text-align:center;
+}
+.display{
+    width : 60px;
+    position:relative;
+    text-align:center;
+}
+.btn-box{
+    width : 50px;
+    position:relative;
+}
+.sw-slot{
+    height:20px;
+    width:40px;
+    background-color : #222;
+    position:relative;
+    top:5px;
+    border-radius:2px;
+    cursor: pointer;
+}
+.switch{
+    height:16px;
+    width: 16px;
+    border-radius:4px;
+    background-color : #3193DE;
+    position:relative;
+    border : 2px solid #333;
+}
+.sw-on{
+    left:20px;
+}
+.rw.bot{
+    margin-top: 10px;
+}
+.full-red{
+    background-color : #FC0102;
+}
+
+/*提示颜色定义*/
+.mc0{
+    background-color : #9f0f17;
+}
+.mc0.liang{
+    background-color : #ff4c4c;
+}
+.mc1{
+    background-color : #00a74a;
+}
+.mc1.liang{
+    background-color : #13ff7c;
+}
+.mc2{
+    background-color : #cca707;
+}
+.mc2.liang{
+    background-color : #fed93f;
+}
+.mc3{
+    background-color : #094a8f;
+}
+.mc3.liang{
+    background-color : #1c8cff;
+}
+.mc4{
+    background-color : #7f4a7f;
+}
+.mc4.liang{
+    background-color : #ff9cff;
+}
+/* 对移动屏幕进行放缩，放缩比例0.6  */
+@media screen and (max-width: 500px){
+    .wrap {
+        top: 40px;
+
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+
+        -o-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        transform-origin: 0 0;
+
+        left: 50%;
+        margin-left: -142px;
+    }
+}
+.level2{
+    background-color:#00a74a;
+}
+.level3{
+    background-color:#3333ff;
+}
+.level4{
+    background-color:#ffff4a;
+}
+.level5{
+    background-color:#ff0000;
+}
